@@ -1,0 +1,133 @@
+/* 
+    Orden que estoy siguiendo para las propiedades:
+        1. Propiedades de posicionamiento
+        2. Propiedades del box model
+        3. Propiedades de texto
+        4. Propiedades "visuales" (colores, bordes, background, etc)
+        5. Otras
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --azulSubmarino: #0c4eb9;
+  --azulAqua: #00a6e7;
+  --azulNeutro: #4176c5d3;
+  --blanco: #fff;
+  --encima: #eee;
+}
+
+body {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--blanco);
+  background-color: var(--azulNeutro);
+}
+
+main {
+  height: 100%;
+}
+
+/* clase para los textos con contraste invertido */
+.alternativo {
+  color: var(--azulSubmarino);
+}
+
+/* coloca negrita a elementos que requieran enfasis */
+.enfasis {
+  font-weight: 600;
+}
+
+.cabecera {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 60px;
+  background-color: var(--blanco);
+  box-shadow: 0 5px 10px #0003;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-imagen {
+  width: 95px;
+  padding: 5px;
+}
+
+.logo-texto {
+  width: 270px;
+  margin-left: 5px;
+}
+
+.barra-navegacion ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.barra-navegacion li {
+  display: inline-block;
+}
+
+.barra-navegacion a {
+  display: inline-block;
+  padding: 25px;
+  text-decoration: none;
+  border-bottom: 2px solid #0083a600;
+  transition: 0.3s;
+}
+
+.barra-navegacion a:hover {
+  border-bottom: 2px solid var(--azulSubmarino);
+  background-color: var(--encima);
+}
+
+/* clase para ciertos titulos (probablemente los nombres de las secciones) */
+.titulo-grande {
+  font-size: 3rem;
+  margin-top: 150px;
+}
+
+.boton {
+  position: relative;
+  top: 60px;
+  display: inline-block;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: var(--blanco);
+  transition: all 0.3s ease;
+}
+
+.boton:hover {
+  transform: scale(1.05);
+  background-color: var(--encima);
+}
+
+/* INICIO */
+#inicio {
+  background: url(/imagenes/fondo_placeholder.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* da estilo a la caja que contiene la info de la pagina de inicio */
+#inicio .contenedor {
+  position: relative;
+  width: 680px;
+  height: 100%;
+  padding: 1px 80px 1px 50px;
+  background-color: #4176c5d3;
+  box-shadow: 5px 0 10px #0003;
+}
