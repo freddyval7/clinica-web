@@ -115,6 +115,19 @@ main {
   background-color: var(--encima);
 }
 
+/* clases de containers que pueden ser útiles en diferentes páginas */
+.containerList {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+
+.containerWithIcon{
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
 /* INICIO */
 #inicio {
   background: url(../imagenes/fondo_placeholder.webp) no-repeat;
@@ -130,4 +143,27 @@ main {
   padding: 1px 80px 1px 50px;
   background-color: #4176c5d3;
   box-shadow: 5px 0 10px #0003;
+}
+
+/* CONTACTO */
+#contacto .contenedor {
+  width: 60dvw;
+}
+
+#contacto .subContainer {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  width: 100%;
+  padding: 1em;
+  margin: 0 auto;
+  border: 1px solid blue;
+  border-radius: .5em;
+  background-color: white;
+  color: black;
+}
+
+#contacto .containerWithIcon img{
+  width: 2em;
+  height: 2em;
 }
