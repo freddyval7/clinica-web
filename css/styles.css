@@ -199,6 +199,13 @@ address {
   margin-right: 30px;
 }
 
+#servicios .carta:hover{
+  cursor: default;
+  transform: scale(1.05);
+  transition: all ease;
+  transition-duration: .2s;
+}
+
 #servicios .con-icono img {
   padding: 20px;
   margin-right: 0;
