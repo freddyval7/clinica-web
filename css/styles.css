@@ -7,6 +7,7 @@
         5. Otras
 */
 
+/* GENERAL */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,10 +20,11 @@
   --azulNeutro: #4176c5d3;
   --blanco: #fff;
   --encima: #eee;
+  --sombra: 7px 7px 5px rgba(0, 0, 0, 0.2);
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
@@ -34,10 +36,23 @@ body {
 
 main {
   flex: 1;
+  max-width: 1110px;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
-p {
-  width: 45ch;
+a {
+  font-weight: 600;
+  color: var(--azulSubmarino);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--azulAqua);
+}
+
+address {
+  font-style: normal;
 }
 
 /* clase para los textos con color invertido */
@@ -54,8 +69,9 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  z-index: 1;
   background-color: var(--blanco);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -83,26 +99,66 @@ p {
 
 .barra-navegacion a {
   padding: 25px;
-  text-decoration: none;
   border-bottom: 2px solid rgba(0, 131, 166, 0);
   transition: 0.3s;
 }
 
 .barra-navegacion a:hover {
-  border-bottom: 2px solid var(--azulSubmarino);
+  border-bottom: 2px solid var(--azulAqua);
   background-color: var(--encima);
 }
 
-/* clase para ciertos titulos (probablemente los nombres de las secciones) */
-.titulo-grande {
-  margin-bottom: 15px;
+/* clase para los titulos de las secciones*/
+.pagina-titulo {
+  margin: 10px 0;
   font-size: 2.4rem;
+}
+
+/* breve decripcion presente en algunas paginas despues del titulo */
+.pagina-descripcion {
+  margin: 20px 0;
+}
+
+/* clases de containers que pueden ser útiles en diferentes páginas */
+.containerList {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+/* INICIO */
+#inicio {
+  height: 100vh;
+  background: url(../imagenes/inicio_fondo.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+#inicio main {
+  max-width: unset;
+  margin: unset;
+}
+
+#inicio .contenido {
+  height: 100%;
+  width: 43%;
+  padding-top: 50px;
+  padding-left: 40px;
+  background-color: rgba(64, 117, 196);
+  box-shadow: 5px 0 20px rgba(0, 0, 0, 0.6);
+}
+
+#inicio p {
+  max-width: 45ch;
+}
+
+#inicio .contenido p:last-of-type {
+  margin-bottom: 60px;
 }
 
 .boton {
   display: inline-block;
   padding: 10px 18px;
-  text-decoration: none;
   border-radius: 5px;
   background-color: var(--blanco);
   transition: all 0.3s ease;
@@ -113,53 +169,63 @@ p {
   background-color: var(--encima);
 }
 
-/* clases de containers que pueden ser útiles en diferentes páginas */
-.containerList {
-  display: flex;
-  flex-direction: column;
-  gap: 3em;
+/* SERVICIOS */
+#servicios main {
+  max-width: 1110px;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
-.containerWithIcon {
+#servicios .contenido {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+#servicios .carta {
   display: flex;
-  gap: 1em;
   align-items: center;
+  padding-right: 30px;
+  color: var(--azulSubmarino);
+  background-color: var(--blanco);
+  border-radius: 0.5em;
+  box-shadow: var(--sombra);
+  overflow: hidden;
 }
 
-/* INICIO */
-#inicio {
-  background: url(../imagenes/fondo_placeholder.webp) no-repeat;
-  background-size: cover;
-  background-position: center;
+#servicios .carta img {
+  max-width: 150px;
+  margin-right: 30px;
 }
 
-/* da estilo a la caja que contiene la info de la pagina de inicio */
-#inicio .contenido {
-  height: 100%;
-  width: 45%;
-  padding-top: 40px;
-  padding-left: 40px;
-  background-color: #4176c5d3;
-  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+#servicios .con-icono img {
+  padding: 20px;
+  margin-right: 0;
 }
 
-#inicio .contenido p {
-  margin-bottom: 60px;
+#servicios .icono {
+  padding: 20px;
 }
 
 /* CONTACTO */
+#contacto main {
+  max-width: unset;
+  margin: unset;
+}
+
 #contacto .contenido {
   display: flex;
   align-items: center;
   max-width: 1110px;
+  margin: 60px auto;
   padding: 30px 0;
-  margin: 80px auto;
   background-color: var(--blanco);
   border-radius: 0.5em;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--sombra);
 }
 
-#contacto h1 {
+#contacto .pagina-titulo {
   flex: 1;
   padding: 0 30px;
   text-align: center;
@@ -171,7 +237,48 @@ p {
   border-left: 2px solid var(--azulSubmarino);
 }
 
+.containerWithIcon {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
 #contacto .containerWithIcon img {
   width: 2em;
   height: 2em;
+}
+
+/* NOSOTROS */
+#nosotros h3 {
+  font-size: 1.8rem;
+}
+
+#nosotros .contenido {
+  display: flex;
+  align-items: center;
+  width: 800px;
+  padding: 30px;
+  margin-bottom: 50px;
+  background-color: var(--azulSubmarino);
+  border-radius: 0.5em;
+  box-shadow: var(--sombra);
+}
+
+#nosotros .titulo {
+  margin-top: -10px;
+  font-size: 1.3rem;
+}
+
+#nosotros .info {
+  margin: 10px 0;
+  opacity: 80%;
+}
+
+#nosotros .contenido img {
+  width: 210px;
+  border-radius: 0.5em;
+}
+
+#nosotros .contenido div {
+  margin-left: 30px;
 }
