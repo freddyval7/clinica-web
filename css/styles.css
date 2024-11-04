@@ -115,8 +115,8 @@ address {
 }
 
 /* breve decripcion presente en algunas paginas despues del titulo */
-.pagina-descripcion {
-  margin: 20px 0;
+p {
+  margin: 16px 0;
 }
 
 /* clases de containers que pueden ser útiles en diferentes páginas */
@@ -129,9 +129,9 @@ address {
 /* INICIO */
 #inicio {
   height: 100vh;
-  background: url(../imagenes/inicio_fondo.jpg);
+  background: url(/imagenes/inicio_fondo3.jpg) no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: top 20% left;
 }
 
 #inicio main {
@@ -192,6 +192,8 @@ address {
   border-radius: 0.5em;
   box-shadow: var(--sombra);
   overflow: hidden;
+  transition: all ease;
+  transition-duration: 0.2s;
 }
 
 #servicios .carta img {
@@ -199,11 +201,9 @@ address {
   margin-right: 30px;
 }
 
-#servicios .carta:hover{
+#servicios .carta:hover {
   cursor: default;
   transform: scale(1.05);
-  transition: all ease;
-  transition-duration: .2s;
 }
 
 #servicios .con-icono img {
@@ -256,60 +256,41 @@ address {
 }
 
 /* VISION */
+#vision {
+  min-height: 100vh;
+  background: url(/imagenes/vision.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#vision p {
+  max-width: 52ch;
+}
+
 #vision main {
   max-width: unset;
   margin: unset;
-  display: flex;
 }
 
-#vision {
-  height: 100vh;
-}
-
-#vision .contenido{
-  height: 100%;
+#vision .contenido {
   width: 50%;
-  padding-top: 50px;
+  padding: 50px;
   padding-left: 40px;
   background-color: rgba(64, 117, 196);
   box-shadow: 5px 0 20px rgba(0, 0, 0, 0.6);
-  border-radius: .5em;
 }
 
 #vision .grilla {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: .5em;
-}
-
-.uno {
-  grid-column: 1;
-  grid-row: 1;
-}
-.dos {
-  grid-column: 2;
-  grid-row: 1;
-}
-.tres {
-  grid-column: 1;
-  grid-row: 2;
-}
-.cuatro {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-#vision .div-vision{
-  display: flex;
+  grid-gap: 2em 3em;
   padding: 2em;
   padding-left: 0;
-  gap: 1em;
 }
 
-#vision .div-vision div {
+#vision .div-vision {
   display: flex;
-  flex-direction: column;
-  gap: .5em;
+  gap: 1em;
   font-size: 14px;
 }
 
@@ -317,23 +298,12 @@ address {
   font-style: italic;
 }
 
-#vision .div-vision img{
+#vision .div-vision img {
   background-color: #eee;
-  padding: .5em;
-  border-radius: 100%;
+  padding: 0.5em;
+  border-radius: 50%;
   width: 2.5em;
   height: 2.5em;
-}
-
-#vision .vision-img{
-  width: 50%;
-  height: 100%;
-}
-
-#vision .vision-img img{
-  width: 100%;
-  height: calc(100dvh - 105px);
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
 }
 
 /* NOSOTROS */
