@@ -177,12 +177,12 @@ address {
 }
 
 #inicio .texto {
+  flex: 1;
   margin-right: 40px;
 }
 
 #inicio .banner img {
-  max-width: 550px;
-  margin: 0 auto;
+  width: 50%;
   border-radius: 5px;
 }
 
@@ -366,10 +366,6 @@ address {
     max-width: 948px;
   }
 
-  #inicio .banner img {
-    max-width: 470px;
-  }
-
   #servicios .grilla {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -384,10 +380,6 @@ address {
 
   .pagina-titulo {
     font-size: 2.1rem;
-  }
-
-  #inicio .banner img {
-    max-width: 340px;
   }
 
   #contacto .contenido {
@@ -457,16 +449,16 @@ address {
   }
 
   #inicio .contenedor {
-    flex-direction: column;
-  }
-
-  #inicio .contenido {
     display: block;
+    text-align: center;
   }
 
   #inicio .texto {
     margin: 0;
-    text-align: center;
+  }
+
+  #inicio .contenedor img {
+    width: 100%;
   }
 
   #servicios .grilla,
