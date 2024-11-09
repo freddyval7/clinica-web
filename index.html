@@ -3,13 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" type="image/png" href="/imagenes/favicon.png" />
     <title>Clinica Veterinaria - Dra. Ana María Camacaro</title>
@@ -17,45 +10,51 @@
 
   <body id="inicio">
     <header class="cabecera">
-      <a href="/" class="logo"
-        ><img class="logo-imagen" src="imagenes/logo_graph2.jpeg" alt="logo" />
-        <img class="logo-texto" src="imagenes/logo_text.jpeg" alt="logo"
-      /></a>
       <nav class="barra-navegacion enfasis">
+        <a href="/" class="logo"
+          ><img
+            class="logo-imagen"
+            src="imagenes/logo_graph2.jpeg"
+            alt="logo" />
+          <img class="logo-texto" src="imagenes/logo_text.jpeg" alt="logo"
+        /></a>
         <ul>
-          <li><a class="alternativo" href="/">INICIO</a></li>
+          <li><a href="/">INICIO</a></li>
           <li>
-            <a class="alternativo" href="./pages/servicios.html">SERVICIOS</a>
+            <a href="./pages/servicios.html">SERVICIOS</a>
           </li>
           <li>
-            <a class="alternativo" href="./pages/contacto.html">CONTACTO</a>
+            <a href="./pages/contacto.html">CONTACTO</a>
           </li>
           <li>
-            <a class="alternativo" href="./pages/vision.html">VISIÓN</a>
+            <a href="./pages/vision.html">VISIÓN</a>
           </li>
           <li>
-            <a class="alternativo" href="./pages/nosotros.html">NOSOTROS</a>
+            <a href="./pages/nosotros.html">NOSOTROS</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="contenido">
-        <h1 class="pagina-titulo enfasis">Más de 20 años</h1>
-        <p>
-          Con mas de veinte años de servicio, la clinica presta un servicio
-          veterinario de máxima calidad que se basa en la
-          <strong>profesionalidad</strong>, <strong>rigurozidad</strong> y
-          <strong>adaptabilidad</strong>.
-        </p>
-        <p>
-          La clinica veterinaria tiene como pilar el compromiso con sus clientes
-          y pacientes.
-        </p>
-        <a class="boton alternativo enfasis" href="./pages/servicios.html"
-          >Más Información</a
-        >
+    <div class="banner">
+      <div class="contenedor">
+        <div class="texto">
+          <h1 class="pagina-titulo enfasis">Más de 20 años</h1>
+          <p>
+            Con mas de veinte años de servicio, la clinica presta un servicio
+            veterinario de máxima calidad que se basa en la
+            <strong>profesionalidad</strong>, <strong>rigurozidad</strong> y
+            <strong>adaptabilidad</strong>.
+          </p>
+          <p>
+            La clinica veterinaria tiene como pilar el compromiso con sus
+            clientes y pacientes.
+          </p>
+          <a class="boton permanente enfasis" href="./pages/servicios.html"
+            >Más Información</a
+          >
+        </div>
+        <img src="/imagenes/inicio.jpeg" alt="" />
       </div>
-    </main>
+    </div>
   </body>
 </html>

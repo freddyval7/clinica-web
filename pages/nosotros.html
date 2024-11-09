@@ -3,42 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <link rel="stylesheet" href="/css/normalize.css" /> -->
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="icon" type="image/png" href="/imagenes/favicon.png" />
     <title>Nosotros - Dra. Ana María Camacaro</title>
   </head>
   <body id="nosotros">
     <header class="cabecera">
-      <a href="/" class="logo"
-        ><img class="logo-imagen" src="/imagenes/logo_graph2.jpeg" alt="logo" />
-        <img class="logo-texto" src="/imagenes/logo_text.jpeg" alt="logo" />
-      </a>
       <nav class="barra-navegacion enfasis">
+        <a href="/" class="logo"
+          ><img
+            class="logo-imagen"
+            src="/imagenes/logo_graph2.jpeg"
+            alt="logo" />
+          <img class="logo-texto" src="/imagenes/logo_text.jpeg" alt="logo"
+        /></a>
         <ul>
-          <li><a class="alternativo" href="/index.html">INICIO</a></li>
+          <li><a href="/">INICIO</a></li>
           <li>
-            <a class="alternativo" href="servicios.html">SERVICIOS</a>
+            <a href="/pages/servicios.html">SERVICIOS</a>
           </li>
           <li>
-            <a class="alternativo" href="contacto.html">CONTACTO</a>
+            <a href="/pages/contacto.html">CONTACTO</a>
           </li>
           <li>
-            <a class="alternativo" href="vision.html">VISIÓN</a>
+            <a href="/pages/vision.html">VISIÓN</a>
           </li>
           <li>
-            <a class="alternativo" href="">NOSOTROS</a>
+            <a href="/pages/nosotros.html">NOSOTROS</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
+    <div class="contenido contenedor">
+      <a class="boton boton-regreso" href="/index.html">Volver a Inicio</a>
       <h1 class="pagina-titulo enfasis">Nosotros</h1>
       <p class="pagina-descripcion">
         La clinica cuenta con la Doctora Ana María Camacaro, quien mediante su
@@ -46,15 +43,15 @@
         provee un servicio seguro y de calidad.
       </p>
       <address>
-        <div class="contenido">
+        <div class="tarjeta alternativo">
           <img src="/imagenes/doctora.png" alt="" />
           <div>
-            <h3 class="enfasis">Ana María Camacaro Rivero</h3>
-            <p class="titulo">Medico Veterinario</p>
-            <p class="info">Egresada de la UCLA en el año 1999.</p>
+            <h3 class="enfasis">Ana María <span>Camacaro Rivero</span></h3>
+            <p class="doctora-titulo">Medico Veterinario</p>
+            <p class="doctora-info">Egresada de la UCLA en el año 1999.</p>
           </div>
         </div>
       </address>
-    </main>
+    </div>
   </body>
 </html>
