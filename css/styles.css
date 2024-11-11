@@ -135,6 +135,15 @@ address {
   background-color: var(--encima);
 }
 
+/* Menu mobile */
+.menu-movil {
+  display: none;
+}
+
+.button-cerrar {
+  display: none;
+}
+
 .containerList {
   display: flex;
   flex-direction: column;
@@ -191,6 +200,11 @@ address {
 #inicio .boton {
   margin: 40px 0;
   font-size: 1.4rem;
+}
+
+#inicio .contenedor img{
+  width: 50%;
+  height: auto;
 }
 
 /* SERVICIOS */
@@ -438,6 +452,54 @@ address {
   .barra-navegacion,
   .contenedor {
     max-width: 570px;
+    padding: 0 15px;
+  }
+
+  .menu-movil {
+    display: block;
+  }
+
+  input {
+    display: none;
+  }
+
+  .menu-movil img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .barra-navegacion ul {
+    display: none;
+  }
+
+  .button-cerrar {
+    display: block;
+  }
+
+  .button-cerrar img{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+
+  #abrir:checked ~ .barra-navegacion ul {
+    z-index: 1;
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1em;
+    padding: 20px;
+    background-color: var(--azulSubmarino);
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .6);
+  }
+
+  .barra-navegacion ul a {
+    color: var(--blanco);
   }
 
   .contenedor {
@@ -452,6 +514,10 @@ address {
 
   #inicio .contenedor {
     flex-direction: column;
+  }
+
+  #inicio .contenedor img {
+    width: 100%;
   }
 
   #inicio .contenido {
