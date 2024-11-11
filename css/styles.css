@@ -445,6 +445,10 @@ address {
 }
 
 @media (max-width: 768px) {
+  input {
+    display: none;
+  }
+
   h1 {
     text-align: center;
   }
@@ -459,40 +463,36 @@ address {
     display: block;
   }
 
-  input {
-    display: none;
-  }
+  /* menu movil */
 
-  .menu-movil img {
+  label img {
     width: 30px;
     height: 30px;
     cursor: pointer;
   }
 
-  .barra-navegacion ul {
+  .barra-navegacion ul{
     display: none;
   }
 
-  .button-cerrar {
-    display: block;
+  #abrir:checked ~ ul {
+    display: flex;
   }
 
-  .button-cerrar img{
+  #abrir:checked ~ ul label img {
     width: 15px;
     height: 15px;
-    cursor: pointer;
   }
 
-  #abrir:checked ~ .barra-navegacion ul {
+  .barra-navegacion ul {
     z-index: 1;
     position: absolute;
     top:0;
     right: 0;
     bottom: 0;
-    display: flex;
     flex-direction: column;
     align-items: end;
-    gap: 1em;
+    gap: 2em;
     padding: 20px;
     background-color: var(--azulSubmarino);
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .6);
@@ -502,11 +502,12 @@ address {
     color: var(--blanco);
   }
 
+  /*  */
+
   .contenedor {
     border-radius: 0;
     padding: 20px;
   }
-
 
   .boton:not(.permanente) {
     display: none;
