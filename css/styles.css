@@ -80,6 +80,7 @@ address {
   display: inline-block;
   padding: 0.8em 0.8em;
   font-size: 1.2rem;
+  text-align: center;
   border-radius: 5px;
   background-color: var(--blanco);
   transition: all 0.3s ease;
@@ -200,22 +201,33 @@ label[for="abrir"] {
   margin-right: 40px;
 }
 
-#inicio .banner img {
+#inicio .fondo-contenedor {
   flex: 1;
+}
+
+#inicio .fondo-contenedor img {
   width: 100%;
-  height: fit-content;
-  border-radius: 0.5em;
+  border-radius: 5px;
+}
+
+#inicio .botones {
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  margin: 40px 0;
 }
 
 #inicio .boton {
-  margin: 40px 0;
   font-size: 1.4rem;
 }
 
-#inicio .contenedor img {
-  width: 50%;
-  height: auto;
+#inicio .boton:nth-of-type(2) {
+  width: 180px;
+  height: fit-content;
+  margin: 0;
+  font-size: 0.85rem;
 }
+
 
 /* SERVICIOS */
 #servicios .icono {
@@ -467,6 +479,11 @@ label[for="abrir"] {
     font-size: 2.1rem;
   }
 
+  #inicio .botones {
+    flex-direction: column;
+    align-items: start;
+  }
+
   #contacto .contenido {
     flex-direction: column;
   }
@@ -560,6 +577,10 @@ label[for="abrir"] {
 
   #inicio .banner {
     margin: 0;
+  }
+
+  #inicio .botones {
+    align-items: center;
   }
 
   .boton:not(.permanente) {
