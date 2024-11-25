@@ -162,10 +162,6 @@ label[for="abrir"] {
 }
 
 /* MODIFICAN ELEMENTOS GENERALES */
-.boton-regreso {
-  position: absolute;
-  right: 20px;
-}
 
 /* Para invertir color desde la clase */
 .alternativo {
@@ -581,10 +577,6 @@ label[for="abrir"] {
 
   #inicio .botones {
     align-items: center;
-  }
-
-  .boton:not(.permanente) {
-    display: none;
   }
 
   #inicio .contenedor {
