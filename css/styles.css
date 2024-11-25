@@ -310,6 +310,7 @@ label[for="abrir"] {
 /* VISION */
 #vision .fondo {
   width: 300px;
+  border-radius: 5px;
 }
 
 #vision .contenido {
