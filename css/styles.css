@@ -264,7 +264,6 @@ label[for="abrir"] {
 
 /* CONTACTO */
 #contacto .contenido {
-  position: relative;
   display: flex;
   align-items: center;
   padding: 30px 0;
@@ -308,10 +307,6 @@ label[for="abrir"] {
   border-radius: 5px;
 }
 
-#vision .contenido {
-  position: relative;
-}
-
 #vision .contenedor-grilla {
   display: flex;
   margin: 60px 0;
@@ -346,10 +341,6 @@ label[for="abrir"] {
 /* NOSOTROS */
 #nosotros h3 {
   font-size: 1.8rem;
-}
-
-#nosotros .contenido {
-  position: relative;
 }
 
 #nosotros .tarjeta {
