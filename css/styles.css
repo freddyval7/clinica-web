@@ -59,6 +59,15 @@ address {
   font-style: normal;
 }
 
+footer {
+  margin-top: 50px;
+  padding: 0 10px;
+  height: 80px;
+  align-content: center;
+  text-align: center;
+  background-color: var(--azulSubmarino);
+}
+
 /* ELEMENTOS PROPIOS DE LA PAGINA */
 /* Define límites */
 .contenedor {
@@ -93,6 +102,8 @@ address {
 
 /* Estiliza la cabecera (rectángulo blanco) y la barra de navegacion */
 .cabecera {
+  position: sticky;
+  top: 0;
   z-index: 1;
   background-color: #fff;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
@@ -103,8 +114,8 @@ address {
   justify-content: space-between;
   align-items: center;
   max-width: var(--margen);
-  height: 95px;
   margin: 0 auto;
+  height: 98px;
 }
 
 .logo {
@@ -113,12 +124,11 @@ address {
 }
 
 .logo-imagen {
-  width: 95px;
-  padding: 5px;
+  width: 80px;
 }
 
 .logo-texto {
-  width: 270px;
+  width: 230px;
 }
 
 .barra-navegacion ul {
@@ -127,7 +137,7 @@ address {
 }
 
 .barra-navegacion ul a {
-  padding: 25px;
+  padding: 1.5em 1.1em;
   margin: 0 3px;
   border-bottom: 2px solid rgba(0, 131, 166, 0);
   transition: 0.3s;
@@ -375,11 +385,11 @@ label[for="abrir"] {
   }
 
   .logo-imagen {
-    width: calc(95px * 0.8);
+    width: calc(60px * 0.9);
   }
 
   .logo-texto {
-    width: calc(270px * 0.8);
+    width: calc(230px * 0.9);
   }
 
   .barra-navegacion,
@@ -522,11 +532,6 @@ label[for="abrir"] {
     text-align: center;
   }
 
-  .cabecera {
-    position: sticky;
-    top: 0;
-  }
-
   .barra-navegacion {
     height: 75px;
   }
@@ -538,11 +543,11 @@ label[for="abrir"] {
   }
 
   .logo-imagen {
-    width: calc(95px * 0.6);
+    width: calc(80px * 0.7);
   }
 
   .logo-texto {
-    width: calc(270px * 0.6);
+    width: calc(230px * 0.7);
   }
 
   .contenedor {
